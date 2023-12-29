@@ -21,5 +21,4 @@ wget https://github.com/vernesong/OpenClash/archive/master.zip
 unzip master.zip
 ## 复制OpenClash软件包到OpenWrt
 cp -r OpenClash-master/luci-app-openclash package/
-git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/luci-app-adguardhome
 ls package/
