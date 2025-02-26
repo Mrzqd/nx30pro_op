@@ -11,6 +11,9 @@
 name: Build OpenWrt
 
 on:
+  push:
+    branches:
+      - x86
   repository_dispatch:
   workflow_dispatch:
     inputs:
@@ -39,7 +42,7 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: actions/checkout@main
+      uses: actions/checkout@x86
 
     - name: Initialization environment
       env:
